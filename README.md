@@ -1,6 +1,8 @@
 # percentual
 a nCurses progress tracker
 
+<h3 align="center"><img src="https://github.com/gsobell/percentual/blob/home/v001.png" width=75% height=75%></h3>
+
 ## About
 #### `percentual` is:
 * a progress tracker
@@ -26,11 +28,6 @@ percentual.py [name] [sections] [optional =  current]
 For example, if you were reviewing chapters of a textbook for a test, and you studied until chapter 12:
 ```sh
 percentual.py Intro-to-Algo 35 12
-```
-
-The rendered display would look like:
-```
-Intro-to-Algo ██████████████████████ 34.3% (12/35)
 ```
 
 ### Controls

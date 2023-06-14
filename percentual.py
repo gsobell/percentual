@@ -25,8 +25,6 @@ VERSION = "0.0.1"
 
 
 def show_usage():
-    print("percentual")
-    print("a nCurses progress tracker")
     print("usage: percentual [name] [sections] [optional =  current] ")
     print("Options:")
     print(" -h,  --help     display this help message")
@@ -74,6 +72,8 @@ i = 1
 while i < len(argv):
     arg = argv[i]
     if arg == "-h" or arg == "--help":
+        print("percentual")
+        print("a nCurses progress tracker")
         show_usage()
         exit()
     elif arg == "-v":
@@ -204,5 +204,8 @@ if __name__ == "__main__":
         wrapper(percentual)
     except KeyboardInterrupt:
         print("Bye.")
+    except ValueError:
+        print("No items added yet.")
+        show_usage()
     finally:
         pass
