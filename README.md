@@ -15,22 +15,30 @@ a nCurses progress tracker
 
 ### Installation
 
+To install in the current working directory on any *nix system:
 ```sh
 curl -LO  https://raw.githubusercontent.com/gsobell/percentual/home/percentual.py
 chmod +x percentual.py
 ```
 
-To add a new item to track:
-```sh
-percentual.py [name] [sections] [optional =  current]
+To install on Arch and derivative systems, use the [PKGBUILD](https://github.com/gsobell/percentual/blob/home/PKGBUILD):
+```shell
+curl -O https://raw.githubusercontent.com/gsobell/percentual/home/PKGBUILD
+makepkg -i
 ```
 
-For example, if you were reviewing chapters of a textbook for a test, and you studied until chapter 12:
+To add a new item to track:
 ```sh
-percentual.py Intro-to-Algo 35 12
+percentual.py [name] [sections] [optional = current]
+```
+
+For example, if you were reviewing chapters of a textbook for a test, and you studied until chapter 14:
+```sh
+percentual.py Intro-to-Algo 35 14
 ```
 
 ### Controls
+Add new item as argument to 
 Use vim or arrow keys to navigate the list of items.
 Use the left or right (`h` or `l`) to increment by 1. Press `q` anytime to exit.
 
@@ -43,8 +51,13 @@ Use the left or right (`h` or `l`) to increment by 1. Press `q` anytime to exit.
 
 ### Future
 - Checklist functionality
+- Term-resize resilience
 - Vim-style command palette
-- Extended color palette 
+- User defined color palette 
 - Delete from within UI
-- Roman, 1a, or Semantic Version numbering
+- Roman, 1a, or SemVer numbering
 - Multiple separate panels
+
+***
+
+Like [progress](https://github.com/Xfennec/progress), but for humans.
