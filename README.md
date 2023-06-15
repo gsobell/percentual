@@ -18,7 +18,8 @@ a nCurses progress tracker
 To install in the current working directory on any *nix system:
 ```sh
 curl -LO  https://raw.githubusercontent.com/gsobell/percentual/home/percentual.py
-chmod +x percentual.py
+mkdir ~/.local/share/percentual && touch ~/.local/share/percentual/data
+mv percentual.py percentual && chmod +x percentual
 ```
 
 To install on Arch and derivative systems, use the [PKGBUILD](https://github.com/gsobell/percentual/blob/home/PKGBUILD):
@@ -29,12 +30,12 @@ makepkg -i
 
 To add a new item to track:
 ```sh
-percentual.py [name] [sections] [optional = current]
+percentual [name] [total sections] [optional = current section]
 ```
 
-For example, if you were reviewing chapters of a textbook for a test, and you studied until chapter 14:
+For example, if you were reviewing a textbook, and you read until chapter 14:
 ```sh
-percentual.py Intro-to-Algo 35 14
+percentual Intro-to-Algo 35 14
 ```
 
 ### Controls
