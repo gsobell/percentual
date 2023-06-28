@@ -2,7 +2,7 @@
 # Maintainer:  @gsobell
 
 pkgname=percentual
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc='a nCurses progress tracker'
 arch=('any')
