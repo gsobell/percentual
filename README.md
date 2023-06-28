@@ -1,7 +1,8 @@
 # percentual
 a nCurses progress tracker
 
-<h3 align="center"><img src="https://github.com/gsobell/percentual/blob/home/v010.png" width=75% height=75%></h3>
+<!-- <h3 align="center"><img src="https://github.com/gsobell/percentual/blob/home/v010.png" width=75% height=75%></h3> -->
+![screenshot of v0.1.0](v010.png)
 
 ## About
 #### `percentual` is:
