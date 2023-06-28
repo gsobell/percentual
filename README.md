@@ -1,7 +1,7 @@
 # percentual
 a nCurses progress tracker
 
-<h3 align="center"><img src="https://github.com/gsobell/percentual/blob/home/v001.png" width=75% height=75%></h3>
+<h3 align="center"><img src="https://github.com/gsobell/percentual/blob/home/v010.png" width=75% height=75%></h3>
 
 ## About
 #### `percentual` is:
@@ -18,7 +18,6 @@ a nCurses progress tracker
 To install in the current working directory on any *nix system:
 ```sh
 curl -LO  https://raw.githubusercontent.com/gsobell/percentual/home/percentual.py
-mkdir ~/.local/share/percentual && touch ~/.local/share/percentual/data
 mv percentual.py percentual && chmod +x percentual
 ```
 
@@ -49,12 +48,13 @@ Use the left or right (`h` or `l`) to increment by 1. Press `q` anytime to exit.
 ### Current
 - Add item and steps to completion
 - Sane defaults
+- User defined color palette
+- Data stored in `XDG` directory, in `json`
 
 ### Future
 - Checklist functionality
 - Term-resize resilience
 - Vim-style command palette
-- User defined color palette 
 - Delete from within UI
 - Roman, 1a, or SemVer numbering
 - Multiple separate panels
