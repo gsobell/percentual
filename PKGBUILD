@@ -11,7 +11,7 @@ license=('GPL')
 provides=("$pkgname")
 depends=('python')
 source=("$url/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('6c4b5b0fc11ddabd7c042981255a83c7a396009c5a335ce1d2f2ff051f3bb27d')
+sha256sums=('63071d33a62008c11345123e9e983524f2d4946c8b94d35dc4020b7313567da3')
 
 package() {
     cd $pkgname-$pkgver
